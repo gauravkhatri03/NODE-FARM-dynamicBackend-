@@ -1,7 +1,7 @@
 var fs = require("fs");
 module.exports = function replaceProduct(i){
-    var data1 = fs.readFileSync("./templates/template-product.html");
-    var data2 = fs.readFileSync("./backend/data.json");
+    var data1 = fs.readFileSync("../templates/template-product.html");
+    var data2 = fs.readFileSync("./data.json");
     data1 = data1.toString();
     console.log(data1);
     data2 = JSON.parse(data2);
