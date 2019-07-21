@@ -1,8 +1,8 @@
 var fs = require('fs');
 module.exports = function replace() {
-    var data1 = fs.readFileSync("../templates/template-overview.html");
-    var data2 = fs.readFileSync("./data.json");
-    var data3 = fs.readFileSync("../templates/template-cards.html");
+    var data1 = fs.readFileSync("./templates/template-overview.html");
+    var data2 = fs.readFileSync("./backend/data.json");
+    var data3 = fs.readFileSync("./templates/template-cards.html");
     data1 = data1.toString();
     data3 = data3.toString();
     data2 = JSON.parse(data2);

@@ -1,8 +1,8 @@
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
-var replaceP = require("./backend/link-product");
-var replaceO = require("./backend/link-overview");
+var replaceP = require("./backend/link-product.js");
+var replaceO = require("./backend/link-overview.js");
 var server = http.createServer(function(req, res){
     var path = req.url;
     var pathx = url.parse(req.url).pathname;
