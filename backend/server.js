@@ -29,5 +29,5 @@ var server = http.createServer(function(req, res){
     res.end();
 });
 var port = process.env.PORT||80;
-server.listen(8000);
-console.log("server started at port 8000");
+server.listen(port);
+console.log("server started");
